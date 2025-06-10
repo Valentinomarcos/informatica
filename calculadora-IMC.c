@@ -4,13 +4,21 @@ int main (int argc, char **argv){
 	float peso;
 	float altura;
 	float bmi;
-
-
-	printf("Introduce tu peso en kilogramos: ");
+	do{
+			printf("Introduce tu peso en kilogramos: ");
 	scanf("%f", &peso);
-
-	printf("Introduce tu altura en metros: ");
+	if(peso<=0){
+		
+		printf("\nerror: tiene que ser positivo");
+	}
+	} while(peso<=0);
+	do{
+		printf("Introduce tu altura en metros: ");
 	scanf("%f", &altura);
+	if(altura<=0){
+		printf("\nerror: tiene que ser positivo");
+	}
+	}while (altura<=0);
 
 	bmi = peso / (altura * altura);
 
