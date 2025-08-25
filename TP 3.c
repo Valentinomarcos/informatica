@@ -22,7 +22,7 @@ int main (int argc, char **argv){
 
 	bmi = peso / (altura * altura);
 
-	printf("\nSu 韓dice de masa corporal es: %.2f\n\n", bmi);
+	printf("\nSu 铆ndice de masa corporal es: %.2f\n\n", bmi);
 
 	printf("Idice de condicion es: \n");
 	printf("-----------------------------\n");
@@ -31,15 +31,15 @@ int main (int argc, char **argv){
 	printf("25.0 _ 29.9   Sobrepeso\n");
 	printf(">= 30.0       Obesidad\n");
 	
-	// Nueva parte: determinar condici髇 del usuario
+	// Nueva parte: determinar condici贸n del usuario
 	if (bmi < 18.5) {
-		printf("\nUsted se encuentra en la condici髇: Bajo peso\n");
+		printf("\nUsted se encuentra en la condici贸n: Bajo peso\n");
 	} else if (bmi < 25.0) {
-		printf("\nUsted se encuentra en la condici髇: Normal\n");
+		printf("\nUsted se encuentra en la condici贸n: Normal\n");
 	} else if (bmi < 30.0) {
-		printf("\nUsted se encuentra en la condici髇: Sobrepeso\n");
+		printf("\nUsted se encuentra en la condici贸n: Sobrepeso\n");
 	} else {
-		printf("\nUsted se encuentra en la condici髇: Obesidad\n");
+		printf("\nUsted se encuentra en la condici贸n: Obesidad\n");
 	}
 return 0;
 }
